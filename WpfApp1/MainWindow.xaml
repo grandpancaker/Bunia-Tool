@@ -31,7 +31,7 @@
         <TextBox x:Name="TextBoxShutDown" VerticalAlignment="Center" Margin="5,0,0,5" Grid.Row="0" Grid.Column="1" Text="{StaticResource Time}" ToolTip="{StaticResource Time}"/>
         <CheckBox Content="Turn of computer" Grid.Row="0" Grid.Column="2" HorizontalAlignment="Center"  VerticalAlignment="Center"/>
 
-        <CheckBox Content="Turn of computer" Grid.Row="1" Grid.Column="2" HorizontalAlignment="Center"  VerticalAlignment="Center"/>
+        <CheckBox Content="Turn of screen" Grid.Row="1" Grid.Column="2" HorizontalAlignment="Center"  VerticalAlignment="Center"/>
 
         <CheckBox Content="CheckBox" Grid.Row="2" Grid.Column="2" HorizontalAlignment="Center"  VerticalAlignment="Center"/>
 
