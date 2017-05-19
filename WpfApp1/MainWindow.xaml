@@ -1,0 +1,43 @@
+﻿<Window x:Class="WpfApp1.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:sys="clr-namespace:System;assembly=mscorlib"
+        xmlns:xctk="http://schemas.xceed.com/wpf/xaml/toolkit"
+
+        xmlns:local="clr-namespace:WpfApp1"
+        mc:Ignorable="d"
+        Title="Bunia Tool" Height="350" Width="666" ResizeMode="NoResize">
+    <Window.Resources>
+        <sys:String x:Key="Time">"Shut Down computer in"</sys:String>
+    </Window.Resources>
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition Width="7*"/>
+            <ColumnDefinition Width="2*"/>
+        </Grid.ColumnDefinitions>
+        <!-- region row 0 -->
+        <TextBlock VerticalAlignment="Center" HorizontalAlignment="Center" Text="TIme"/>
+        <TextBox x:Name="TextBoxShutDown" VerticalAlignment="Center" Margin="5,0,0,5" Grid.Row="0" Grid.Column="1" Text="{StaticResource Time}" ToolTip="{StaticResource Time}"/>
+        <CheckBox Content="Turn of computer" Grid.Row="0" Grid.Column="2" HorizontalAlignment="Center"  VerticalAlignment="Center"/>
+
+        <CheckBox Content="Turn of computer" Grid.Row="1" Grid.Column="2" HorizontalAlignment="Center"  VerticalAlignment="Center"/>
+
+        <CheckBox Content="CheckBox" Grid.Row="2" Grid.Column="2" HorizontalAlignment="Center"  VerticalAlignment="Center"/>
+
+        <CheckBox Content="CheckBox" Grid.Row="3" Grid.Column="2" HorizontalAlignment="Center"  VerticalAlignment="Center"/>
+
+
+        <Button Content="Run It!!" Grid.Row="5" Grid.Column="2" Margin="3" Click="RunItButtonClick" />
+    </Grid>
+</Window>
